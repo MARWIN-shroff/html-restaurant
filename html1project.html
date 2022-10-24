@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <style>
+        body{
+font-size:20px;
+color: white;
+background-size: cover;
+}
+.box{ width: 1200px;
+float:left;
+padding: 25px 36px;
+border:1px solid none;}
+.box ul li{
+width: 1200px;
+justify-content: center;
+
+margin: 20px auto;
+text-align: center;
+}
+.mainmenu
+.mainmenu a
+.mainmenu a:hover
+.mainmenu img{
+position: fixed;
+z-index: -1;
+top:0px; left:0px; width:100%; height: 100vh;
+opacity: 0.9;
+/*object-fit:cover;*/
+transition: all ease 0.5s;
+}
+.wd{
+align-items: center;
+width: 1200px;
+height: 600px;
+background-color: rgb(26, 25, 25);
+opacity: 0.8;
+padding: 65px 51px 65px 51px;
+}
+.wd h1{
+text-align: center;
+text-transform: uppercase;
+font-weight: 300px;
+padding: 24px;
+}
+.wd h4{
+text-align: center;
+color:rgb(133, 131, 131);
+font-weight: 100px;
+
+}
+.wd h2{
+text-align: center;
+text-transform: uppercase;
+font-weight: normal;
+margin: 40px auto;
+}
+.opt form , input[type="button"]{
+background-color: rgb(22, 19, 19);
+color:rgb(139, 110, 110);
+/* padding:10px;*/
+margin:-14px auto;
+padding-left: 50px;
+padding-right: 50px;
+text-align: center;
+font-size: 16px;
+}
+form, input[type="button"] {
+animation: glowing 300ms infinite;
+font-weight: 500%;
+}
+@keyframes glowing {
+25% {
+background-color: rgb(236, 44, 44);
+}
+50% {
+background-color: rgb(71, 207, 30);
+}
+100% {
+background-color: rgb(25, 37, 209);
+}
+}
+.navigation{
+display: flex;
+color: rgba(23, 35, 66, 0.658);
+}
+
+    </style>
+</head>
+<body>
+    <script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script>
+$(function(){
+var image = $(".mainmenu").find('img').attr('src');
+$(".mainmenu a").mouseover(function(){
+var newimg = $(this).attr('data-image');
+$(this).parent().find('img').attr("src", newimg);
+});
+});
+</script>
+<div class="box">
+<div class="mainmenu">
+<!-- <img src="payalop.jpeg"> -->
+<nav class="navbar">
+<ul class="navigation">
+    <li>Home</li>
+    <li>Menu</li>
+    <li>FAQ</li>
+    <li>Contact</li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="wd">
+<h1> Welcome to Marwin's Delight</h1>
+<h4> <i>Order lip smacking food online, 100% quality, safety and taste
+assured.</i></h4>
+<h2> Call 8104861770 for bookings</h2>
+<div class="opt">
+<form action="" method="post">
+<input type="button" value="ORDER NOW">
+</form>
+</div>
+</div>
+</body>
+</html>
