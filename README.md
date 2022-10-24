@@ -5,3 +5,7 @@ However, the designing part and the logic part is done in other languages like C
 Here is a restaurant webpage in pure HTML.
 
 
+https://user-images.githubusercontent.com/80105975/197468004-231640f7-8393-4466-94b2-452d46da545c.mp4
+
+
+
